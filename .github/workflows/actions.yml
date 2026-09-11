@@ -182,7 +182,7 @@ jobs:
       - name: bump values.yaml
         run: |
           # 1. Create new branch from dev
-          cd flowable-deploy-template
+          cd flowable-deploy-template-local
           git fetch origin dev
           git checkout -b "release/${{ github.event.release.tag_name }}" origin/dev
 
