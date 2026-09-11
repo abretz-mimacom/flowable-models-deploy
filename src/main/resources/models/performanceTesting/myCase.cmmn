@@ -11,6 +11,7 @@
     <casePlanModel id="onecaseplanmodel1" name="Case plan model" flowable:formKey="startForm" flowable:formFieldValidation="false">
       <extensionElements>
         <flowable:default-menu-navigation-size><![CDATA[expanded]]></flowable:default-menu-navigation-size>
+        <flowable:candidates-type><![CDATA[all]]></flowable:candidates-type>
         <flowable:work-form-field-validation><![CDATA[false]]></flowable:work-form-field-validation>
         <flowable:workformkey><![CDATA[workForm]]></flowable:workformkey>
         <design:stencilid><![CDATA[CasePlanModel]]></design:stencilid>
@@ -89,6 +90,8 @@
         <extensionElements>
           <flowable:serviceTaskType><![CDATA[service-registry]]></flowable:serviceTaskType>
           <flowable:serviceMapping serviceModelKey="myDbDo" operationKey="search"></flowable:serviceMapping>
+          <flowable:inputParameter name="name" value="name"></flowable:inputParameter>
+          <flowable:inputParameter name="id" value="id"></flowable:inputParameter>
           <flowable:outputVariableName><![CDATA[otherResult]]></flowable:outputVariableName>
           <design:stencilid><![CDATA[ServiceRegistryTask]]></design:stencilid>
           <design:stencilsuperid><![CDATA[ServiceTask]]></design:stencilsuperid>
@@ -156,28 +159,28 @@
       </cmmndi:CMMNShape>
       <cmmndi:CMMNEdge id="CMMNEdge_Connector_11" cmmnElementRef="planItemcmmnTask_6" targetCMMNElementRef="EntryCriterion_11">
         <di:extension>
-          <flowable:docker type="source" x="50.0" y="40.0"></flowable:docker>
-          <flowable:docker type="target" x="9.0" y="14.0"></flowable:docker>
+          <flowable:docker type="source" x="100.0" y="40.0"></flowable:docker>
+          <flowable:docker type="target" x="0.0" y="14.0"></flowable:docker>
         </di:extension>
-        <di:waypoint x="775.9499999999999" y="283.0"></di:waypoint>
+        <di:waypoint x="776.0" y="283.0"></di:waypoint>
         <di:waypoint x="947.0" y="283.0"></di:waypoint>
         <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
       </cmmndi:CMMNEdge>
       <cmmndi:CMMNEdge id="CMMNEdge_Connector_13" cmmnElementRef="planItemProcessTask_11" targetCMMNElementRef="EntryCriterion_12">
         <di:extension>
-          <flowable:docker type="source" x="50.0" y="40.0"></flowable:docker>
-          <flowable:docker type="target" x="9.0" y="14.0"></flowable:docker>
+          <flowable:docker type="source" x="100.0" y="40.0"></flowable:docker>
+          <flowable:docker type="target" x="0.0" y="14.0"></flowable:docker>
         </di:extension>
-        <di:waypoint x="574.9499999999325" y="283.0"></di:waypoint>
+        <di:waypoint x="575.0" y="283.0"></di:waypoint>
         <di:waypoint x="667.0" y="283.0"></di:waypoint>
         <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
       </cmmndi:CMMNEdge>
       <cmmndi:CMMNEdge id="CMMNEdge_cmmnConnector_11" cmmnElementRef="planItemcmmnTask_9" targetCMMNElementRef="cmmnEntrySentry_10">
         <di:extension>
-          <flowable:docker type="source" x="50.0" y="40.0"></flowable:docker>
-          <flowable:docker type="target" x="9.0" y="14.0"></flowable:docker>
+          <flowable:docker type="source" x="100.0" y="40.0"></flowable:docker>
+          <flowable:docker type="target" x="0.0" y="14.0"></flowable:docker>
         </di:extension>
-        <di:waypoint x="427.94999999994815" y="283.0"></di:waypoint>
+        <di:waypoint x="428.0" y="283.0"></di:waypoint>
         <di:waypoint x="466.0" y="283.0"></di:waypoint>
         <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
       </cmmndi:CMMNEdge>
