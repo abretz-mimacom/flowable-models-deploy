@@ -1,0 +1,8 @@
+{
+  "channelType" : "outbound",
+  "type" : "kafka",
+  "serializerType" : "json",
+  "topic" : "myTopic",
+  "name" : "myOutboundChannel",
+  "key" : "myOutboundChannel"
+}
