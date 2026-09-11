@@ -171,7 +171,7 @@ jobs:
       - name: Checkout deployment chart
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/flowable-deploy-template
+          repository: ${{ github.repository_owner }}/flowable-deploy-template-local
           path: flowable-deploy-template
           token: ${{ secrets.ARC_TOKEN }}
       - name: Get Commit Hash
